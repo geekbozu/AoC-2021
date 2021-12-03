@@ -1,36 +1,35 @@
-
 def part1_input(file):
     depth = 0
     horiz = 0
     for motion in file:
         act = motion.split(" ")
         match act[0]:
-            case 'forward':
+            case "forward":
                 horiz += int(act[1])
-                
-            case 'down':
+
+            case "down":
                 depth += int(act[1])
-                
-            case 'up':
+
+            case "up":
                 depth -= int(act[1])
-    return (horiz,depth,horiz*depth)     
+    return (horiz, depth, horiz * depth)
+
 
 def part2_input(file):
     depth = 0
     horiz = 0
-    aim =0
+    aim = 0
     for motion in file:
         act = motion.split(" ")
         match act[0]:
-            case 'forward':
-                depth += aim*int(act[1])
+            case "forward":
+                depth += aim * int(act[1])
                 horiz += int(act[1])
-                
-            case 'down':
+            case "down":
                 aim += int(act[1])
-            case 'up':
+            case "up":
                 aim -= int(act[1])
-    return (horiz,depth,horiz*depth)     
+    return (horiz, depth, horiz * depth)
 
 
 # Day2 Part 1 Sample
