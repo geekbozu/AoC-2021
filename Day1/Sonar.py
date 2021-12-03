@@ -12,8 +12,8 @@ with open("Day1/input.txt") as file:
         last = line
 
 print(depth)
-
 # 1195
+
 list = []
 depth = 0
 with open("Day1/input.txt") as file:
@@ -30,5 +30,4 @@ for i in range(len(list) - 2):
     last_sum = cur_sum
 
 print(depth)
-
 # 1235
