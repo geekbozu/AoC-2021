@@ -4,7 +4,6 @@ def part1_input(file):
     for line in file:
         row = [int(char) for char in line.strip()]
         computed = list(map(lambda a, b: a + b, computed, row))
-        [5, 7, 8, 5, 7]
         total += 1
 
     gamma = 0
@@ -79,10 +78,26 @@ def part2_input(file):
 # =====================
 with open("Day3/sample.txt") as file:
     print("Day3 Part 1 Sample")
+    print(part1_input(file))
+    print("=====================")
+
+with open("Day3/input.txt") as file:
+    print("Day3 Part 1 My Input")
+    print(part1_input(file))
+    print("=====================")
+
+# Day3 Part 2 Sample
+# ([[0, 1, 0, 1, 0]], [[1, 0, 1, 1, 1]], 230)
+# =====================
+# Day3 Part 2 My Input
+# ([[0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1]], [[1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1]], 7863147)
+# =====================
+with open("Day3/sample.txt") as file:
+    print("Day3 Part 2 Sample")
     print(part2_input(file))
     print("=====================")
 
 with open("Day3/input.txt") as file:
-    print("Day4 Part 1 My Input")
+    print("Day3 Part 2 My Input")
     print(part2_input(file))
     print("=====================")
